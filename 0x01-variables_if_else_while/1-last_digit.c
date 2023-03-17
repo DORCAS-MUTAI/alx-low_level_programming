@@ -23,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		print("Last digit of $d is %d and is zero\n", n, n % 10);
+		print("Last digit of %d is %d and is zero\n", n, n % 10);
 	}
 
 	return (0);
