@@ -5,13 +5,14 @@
  */
 int main(void)
 {
-	char c;
-	char c = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (c <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		printf("Values %d char %c\n", c, c);
-		c = c + 1;
+		putchar(alp[i]);
 	}
+	putchar('\n');
 	return (0);
+}
 
