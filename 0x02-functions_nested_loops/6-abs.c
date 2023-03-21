@@ -5,8 +5,9 @@
  * Returns: absolute value of n
  */
 
-int _abs(int n)
+int _abs(int)
 {
+	int n;
 	if (n > 0)
 		return (n);
 	else
