@@ -4,7 +4,7 @@
 *@s: address of memory to print
 *@b: the constant byte
 *@n: size of memory to print
-*
+*Return: s
 *
 */
 
