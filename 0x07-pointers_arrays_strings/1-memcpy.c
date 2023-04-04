@@ -7,20 +7,15 @@
 *Return: dest
 */
 
-char *_memcpy(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int j;
+	int a = 0;
+	int i = n;
 
-	j = 0;
-	while (j < n && src[j] != 0)
+	for (a = 0; a < i; a++)
 	{
-		dest[j] = src[j];
-		j++;
-	}
-	while (j < n)
-	{
-		dest[j] = '\0';
-		j++;
+		dest[a] = src[a];
+		n--;
 	}
 	return (dest);
 }

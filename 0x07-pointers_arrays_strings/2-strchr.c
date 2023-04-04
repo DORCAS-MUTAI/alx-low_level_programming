@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 **_strchr - check the code
@@ -14,13 +15,9 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 		{
 			return (s);
+			s++;
 		}
-		s++;
+		return (NULL);
 	}
-	if (*s == c)
-	{
-		return (s);
-	}
-	return (NULL);
 }
 
