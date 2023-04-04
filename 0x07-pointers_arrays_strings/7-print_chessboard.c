@@ -1,4 +1,4 @@
-#includ; 0e"main.h"
+#include "main.h"
 /**
 *print_chessboard - main entry point
 *@a: array
