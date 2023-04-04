@@ -1,4 +1,4 @@
-#include "main.h"
+e#include "main.h"
 /**
 **_strstr - locates a substring
 *@haystack: string to look for
@@ -24,8 +24,7 @@ char *_strstr(char *haystack, char *needle)
 				if (needle[index + 1] == '\0')
 					return (haystack);
 				index++;
-			}
-			while (haystack[index] == needle[index]);
+			} while (haystack[index] == needle[index]);
 		}
 		haystack++;
 	}
