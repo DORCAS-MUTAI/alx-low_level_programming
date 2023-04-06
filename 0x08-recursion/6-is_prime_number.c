@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
 *is_prime_number - check if the number is prime
@@ -8,9 +9,9 @@
 *
 */
 
-int is_prime_number(int n, int num)
+int is_prime_number(int n)
 {
-	num = 2;
+	int num = 2;
 
 	while (num < n)
 	{
