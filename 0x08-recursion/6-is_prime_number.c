@@ -8,13 +8,13 @@
 *
 */
 
-int is_prime_number(int n)
+int is_prime_number(int n, int num)
 {
 	num = 2;
 
 	while (num < n)
 	{
-		if (n % num == 0)
+		if (n % num == 0 && num > 0)
 			return (0);
 		num++;
 	}
