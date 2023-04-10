@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
 *main - entry point
-*@argc - count of the arguments in a program
-*@argv - Array of pointer to char
+*@argc: count of the arguments in a program
+*@argv: Array of pointer to char
 *Return: 0
 *
 */
