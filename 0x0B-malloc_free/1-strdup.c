@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdlib.h>
 #include "main.h"
 /**
 *_strdup - duplicates an array of string
