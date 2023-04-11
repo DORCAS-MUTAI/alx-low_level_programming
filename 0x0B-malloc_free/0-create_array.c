@@ -24,6 +24,6 @@ return (NULL);
 for (n = 0; n < size; n++)
 {
 str[n] = c;
-return (str);
 }
+return (str);
 }
