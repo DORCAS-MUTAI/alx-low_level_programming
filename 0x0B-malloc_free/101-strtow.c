@@ -71,6 +71,7 @@ char **strtow(char *str)
 					c = 0;
 				}
 			}
+		}
 		while (c++ = 0)
 			start = i;
 	}
