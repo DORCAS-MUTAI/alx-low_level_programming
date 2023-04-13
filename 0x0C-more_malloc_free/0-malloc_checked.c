@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 *malloc_checked - allocates memory space
-*@str: string
+*@b: string
 *Return: pointer
 *
 *
@@ -11,6 +11,7 @@
 void *malloc_checked(unsigned int b)
 {
 	char *str;
+
 	str = malloc(b);
 
 	if (str == NULL)
