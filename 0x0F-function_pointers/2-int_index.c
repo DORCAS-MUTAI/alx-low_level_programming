@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
 *int_index - returns index of the first element
-*@array:
+*@array: array
 *@size: number of elements in the array
 *@cmp: pointer to compare values
 *Return: 0 if true
