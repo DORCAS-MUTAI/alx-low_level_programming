@@ -4,10 +4,6 @@
 /**
 *print_all - prints anything
 *@format: list of types of arguments
-*
-*
-*
-*
 */
 
 void print_all(const char * const format, ...)
@@ -15,13 +11,12 @@ void print_all(const char * const format, ...)
 	va_list my_list;
 	unsigned int i = 0, j, c = 0;
 	char *str;
-
 	const char t_arg[] = "cifs";
 
 	va_start(my_list, format);
 	while (format && format[i])
 	{
-		j = 0;	
+		j = 0;
 		while (t_arg[j])
 		{
 			if (format[i] == t_arg[j] && c)
@@ -30,7 +25,6 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		}
-
 		switch (format[i])
 		{
 		case 'c':
@@ -53,6 +47,5 @@ void print_all(const char * const format, ...)
 			break;
 		} i++;
 	}
-	printf("\n");
-	va_end(my_list);
+	printf("\n"), va_end(my_list);
 }
