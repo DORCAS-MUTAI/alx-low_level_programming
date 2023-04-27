@@ -1,32 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 
-void insertAtBeginning(struct node **head, int value)
+/**
+ * add_node - adds a new node at the beginning of a linked list
+ * @head: double pointer to the list_t list
+ * @str: new string to add in the node
+ *
+ * Return: the address of the new element, or NULL if it fails
+ */
+list_t *add_node(list_t **head, const char *str)
 {
-    /* declare a struct node */
-    struct node *newNode;
+list_t *new;
+unsigned int length = 0;
 
-    /* allocate space for the node */
-    newNode = (struct node *) malloc(sizeof(struct node));
+while (str[length])
+length++;
 
-    if (newNode == NULL){
-        return;
-    }
+new = malloc(sizeof(list_t));
+if (!new)
+return (NULL);
 
-    /* pass the value to the node */
-    newNode->age = value;
+new->str = strdup(str);
+new->length = length;
+new->next = (*head);
+(*head) = new;
 
-    /* point this newNode to what head was originally pointing to */
-    if (*head == NULL) /* means empty list so newnode becomes only member */
-    {
-        newNode->next = NULL;
-        *head = newNode;
-    }
-    else 
-    {
-        newNode->next = *head;
-        *head = newNode;
-    }
-    printf("I successfully inserted a node at the beginning \n");
+return (*head);
 }
+
