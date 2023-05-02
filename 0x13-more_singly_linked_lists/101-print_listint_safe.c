@@ -46,7 +46,7 @@ return (nodes);
 }
 
 i = i->next;
-j = (i->next)->next;
+j = (j->next)->next;
 }
 
 return (0);
